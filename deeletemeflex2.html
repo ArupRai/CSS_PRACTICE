@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,
+        div.mflex{
+            width: 100vw;
+            height: 100vh;
+        }
+        div.mflex{
+            display: flex;
+            flex-flow: row wrap;
+            align-content: stretch;     /* y axis alingment*/ 
+        }
+        div.mflex nav.cflex1{
+            flex-basis: 20%;
+        }
+        div.mflex div.cflex2{
+            flex-basis: 80%;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: flex-start;
+        }
+        div.mflex div.cflex2 *{
+            flex-basis: 100%;
+            display: block;
+        }
+        div.mflex div.cflex2 div.art{
+            height: 81.5%;  
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mflex">
+            <nav class="cflex1" style="background-color: hotpink;">
+                <h2>Nav</h2> 
+            </nav>
+        <div class="cflex2">
+            <div class="header" style="background-color: aqua;">
+                <p>
+                <h2>Header</h2>
+                </p>
+            </div>
+            <div class="art" style="background-color: chartreuse;">
+                <p>
+                <h2>article</h2>
+                </p>
+            </div>
+            <div class="footer" style="background-color: aqua;">
+                <p>
+                <h2>foot</h2>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

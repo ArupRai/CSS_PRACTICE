@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SP</title>
+    <link rel="stylesheet" href="paydesign.css">
+</head>
+<body>
+    hello there
+    <a href="index.html">HOME</a>&nbsp;&nbsp;&nbsp;DEVOTEE here :)
+<hr>
+<hr>
+    <Table border="5">
+        <tr>
+            <th>Avtar</th>
+            <th>Pastime</th>
+            <th>Yuga</th>
+        </tr>
+        <tr>
+            <td rowspan="">Ramachandra</td>
+            <td rowspan="">Ramayan</td>
+            <td rowspan="">Treta-yuga</td>
+        </tr>
+        <tr>
+            <td rowspan="">Narshimha</td>
+            <td rowspan="">Pralaahad maharaj</td>
+            <td rowspan="">Sata-yuga</td>
+        </tr>
+        <tr>
+            <td>Kalki</td>
+            <td colspan="2">yet to occur in Kali-yuga </td>
+        </tr>
+        <tr>
+            <td colspan="3" align="middle">Hare krishna hari bol</td>
+            <!-- <td>hari bol hari hari</td> -->
+            <!-- <td>hari bol hari hari</td> -->
+            
+        </tr>
+    </Table>
+    <hr>
+    <div>
+        <!-- GET method when less secure data shared to server -->
+        <form action=""><!--server url address in action -->
+            <h1>Payment Form</h1>
+            <h2>Contact-Information</h2>
+            <p>Name:<input type="text" name="name" id="name"></p>
+                <fieldset>
+                    <legend ><p>Gender</p></legend>
+                    <p>Male<input type="radio" name="gender" id="male" value="male">&nbsp;&nbsp;&nbsp; Female<input type="radio" name="gender" id="female" value="female"></p>
+                </fieldset>
+                <p>Address:<textarea name="address" cols="100" row="8"></textarea></p>
+                <p>Email:<input type="email" name="email" id="email"></p>
+                <p>Pincode:<input type="number" name="pincode" id="pincode"></p>
+            <h2>Payment-Information</h2>
+                <p>Card Type: *
+                    <select name="card_type" id="card_type" required>
+                        <option value="">--Select--</option>
+                        <option value="visa">Visa</option>
+                        <option value="rupay">Rupay</option>
+                        <option value="mastercard">Mastercard</option>
+                    </select>
+                <p> Card Number *<input type="number" name="cardnumber" id="cardnumber" ></p>
+                <p>Exp date *<input type="month" name="expdate" id="expdate">
+                </p>    
+                <p>CVV *<input type="password" name="cvv" id="cvv"></p>
+                <!-- <p>verify captcha<br></p> -->
+                <!-- <p><input type =</p> -->
+                <!-- <p><input type="color" name="favcolor" id="favcolor"></p> -->
+                <!-- <p><input type="tel" name="telno" id="telno"></p> -->
+                <p><input type="file" name="docs" id="docs">
+                <p><input type="submit" value="Pay Now"></p>
+            </form>
+    </div>
+    <a data-email="dhattarwalaman97@gmail.com" href="mailto:aruprai842@gmail.com">Aman Dhattarwal</a>
+    <a data-email="dhattarwalaman97@gmail.com" href="#top">hawal</a>
+</body>
+</html>

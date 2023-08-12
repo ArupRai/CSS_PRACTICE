@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cgrid,
+        .chgrid,
+        .mgrid{
+            row-gap: .5em;
+            column-gap: .5em;
+            width: 100%;
+            height: 100%;
+            display: grid;
+        }
+        .mgrid{
+            grid-template-columns:repeat(1, 1fr 4fr);
+        }
+        .cgrid{
+            grid-template-rows: repeat(1, 1fr 8fr 1fr);
+        }
+        .chgrid{
+            grid-template-columns:repeat(1, 4fr 1fr);
+        }
+        div.mgrid h2{
+            text-align: center;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    <div class="mgrid">
+            <nav class="cflex1" style="background-color: yellow;">
+                <h2>Nav</h2> 
+            </nav>
+        <div class="cgrid">
+            <div class="header" style="background-color: yellow;">
+                <p>
+                <h2>Header</h2>
+                </p>
+            </div>
+            <div class="chgrid">
+            <div class="art" style="background-color: yellow;">
+                <p>
+                <h2>article</h2>
+                </p>
+            </div>
+            <div class="ads" style="background-color: yellow;"><p><h2>ads</h2></p></div>
+            </div>
+            <div class="footer" style="background-color: yellow;">
+                <p>
+                <h2>foot</h2>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

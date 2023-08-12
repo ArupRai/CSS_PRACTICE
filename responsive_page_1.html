@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            overflow-x: hidden;
+            overflow-y: hidden;
+            box-sizing: border-box;
+        }
+        body{
+            margin: 2vmin;
+            border: 2px solid black;
+            width:97vw;
+            height: 96vh;
+            padding: 2%;
+            background-color: yellow;
+            border-color: brown;
+        }
+        div{
+            margin: -2px;
+            display: inline-block;
+        }
+        .a{
+            background-color: hotpink;
+        }
+        .b{
+            background-color: rgba(255, 105, 180, 0.848);
+        }
+        .c{
+            background-color: rgba(255, 105, 180, 0.643);
+        }
+        .d{
+            background-color: rgba(255, 105, 180, 0.42);
+        }
+        @media all and (min-width:670px){
+            .a,.b,.c,.d{
+                overflow-y: auto;
+                height: 50%;
+                width: 25%;
+                padding: 40px;
+                text-align:center;
+            }
+        }
+        @media all and (max-width:669px) and (min-width:440px){
+            .a,.b,.c,.d{
+                overflow-y: auto;
+                height: 12%;
+                width: 50%;
+                padding: 40px;
+                text-align:center;
+            }
+        }
+        @media all and (max-width:439px){
+            .a,.b,.c,.d{
+                overflow-y: auto;
+                height: 25%;
+                width: 100%;
+                padding: 15px;
+                text-align:center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, mollitia. Hello&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <div class="b">hello&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <div class="c">hellO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:aruprai842@gmail.com">home</a>
+    </div>
+    <div class="d">heLLo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:aruprai842@gmail.com">work</a>
+    </div>
+    
+</body>
+</html>
